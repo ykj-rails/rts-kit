@@ -6,7 +6,7 @@ type Sample = {
 export const sample = () => {
   const object: Sample = {
     sample: 'sample',
-    sample2: 99,
+    sample2: 9999,
   }
   console.log(object)
 }

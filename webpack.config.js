@@ -9,10 +9,17 @@ module.exports = {
     filename: '[name].js',
     path: path.resolve(__dirname, 'public/js'),
   },
+  devServer: {
+    static: {
+      directory: path.join(__dirname, 'public'),
+    },
+    port: 8080,
+    compress: true,
+  },
   module: {
     rules: [
       {
-        test: /\.ts$/,
+        test: /\.tsx?$/,
         exclude: /node_modules/,
         use: {
           loader: 'babel-loader',
@@ -24,6 +31,6 @@ module.exports = {
     ],
   },
   resolve: {
-    extensions: ['.ts'],
+    extensions: ['.tsx', '.ts'],
   },
 }
