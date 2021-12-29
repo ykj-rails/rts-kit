@@ -4,16 +4,19 @@
   "description": "React TypeScript Starter-kit",
   "author": "yukiji",
   "scripts": {
-    "dev": "webpack serve --open",
+    "dev": "webpack serve",
     "build": "webpack"
   },
   "devDependencies": {
     "@babel/core": "^7.16.5",
     "@babel/preset-env": "^7.16.5",
+    "@babel/preset-react": "^7.16.5",
     "@babel/preset-typescript": "^7.16.5",
     "@types/react": "^17.0.38",
     "@types/react-dom": "^17.0.11",
     "babel-loader": "^8.2.3",
+    "core-js": "^3.20.1",
+    "html-webpack-plugin": "^5.5.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "typescript": "^4.5.4",
