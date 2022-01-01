@@ -1,0 +1,1 @@
+(()=>{"use strict";const o=(o,l)=>o+l;console.log({sample:"sample",sample2:9999}),(async()=>{const l=await o(2,"2");console.log(`hello ${l}`)})(),(()=>{const o="hoge hoge".replaceAll("hoge","fuga");console.log(o)})(),console.log("hello")})();

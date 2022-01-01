@@ -2,8 +2,8 @@ const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
-  mode: 'development',
-  // mode: 'production',
+  // mode: 'development',
+  mode: 'production',
   entry: {
     app: './src/ts/app.ts',
     'app-react': './src/tsx/app.tsx',
@@ -12,7 +12,7 @@ module.exports = {
     filename: '[name].js',
     path: path.resolve(__dirname, 'public'),
   },
-  devtool: 'inline-source-map',
+  // devtool: 'inline-source-map',
   devServer: {
     static: {
       directory: path.join(__dirname, 'src'),
@@ -25,12 +25,7 @@ module.exports = {
       {
         test: /\.tsx?$/,
         exclude: /node_modules/,
-        use: {
-          loader: 'babel-loader',
-          options: {
-            presets: ['@babel/preset-env'],
-          },
-        },
+        use: ['babel-loader', 'ts-loader'],
       },
     ],
   },

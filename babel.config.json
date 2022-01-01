@@ -4,16 +4,11 @@
       "@babel/preset-env",
       {
         "targets": {
-          "edge": "17",
-          "safari": "11.1",
-          "node": "current"
+          "chrome": "90"
         },
         "useBuiltIns": "usage",
         "corejs": "3.20.1"
       }
-    ],
-    [
-      "@babel/preset-typescript"
     ],
     [
       "@babel/preset-react"
