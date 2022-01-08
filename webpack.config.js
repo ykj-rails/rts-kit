@@ -1,9 +1,10 @@
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+// const mode = process.env.NODE_ENV || 'development'
+const mode = 'development'
 
 module.exports = {
-  // mode: 'development',
-  mode: 'production',
+  mode: mode,
   entry: {
     app: './src/ts/app.ts',
     'app-react': './src/tsx/app.tsx',
@@ -26,6 +27,17 @@ module.exports = {
         test: /\.tsx?$/,
         exclude: /node_modules/,
         use: ['babel-loader', 'ts-loader'],
+        // use: [
+        //   {
+        //     loader: 'babel-loader',
+        //     options: {
+        //       presets: ['@babel/preset-env'],
+        //     },
+        //   },
+        //   {
+        //     loader: 'ts-loader',
+        //   },
+        // ],
       },
     ],
   },
