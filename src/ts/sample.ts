@@ -51,7 +51,3 @@ export const sample = () => {
   console.log(newHuman)
   asyncSum()
 }
-
-const aaa = (aaa: any) => {
-
-}
