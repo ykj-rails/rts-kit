@@ -12,26 +12,14 @@
     // "useDefineForClassFields": true,                  /* Emit ECMAScript-standard-compliant class fields. */
 
     /* Modules */
-    "module": "ES6",                                /* Specify what module code is generated. */
-    // "rootDir": "./",                                  /* Specify the root folder within your source files. */
-    // "moduleResolution": "node",                       /* Specify how TypeScript looks up a file from a given module specifier. */
-    // "baseUrl": "./",                                  /* Specify the base directory to resolve non-relative module names. */
-    // "paths": {},                                      /* Specify a set of entries that re-map imports to additional lookup locations. */
-    // "rootDirs": [],                                   /* Allow multiple folders to be treated as one when resolving modules. */
-    // "typeRoots": [],                                  /* Specify multiple folders that act like `./node_modules/@types`. */
-    // "types": [],                                      /* Specify type package names to be included without being referenced in a source file. */
-    // "allowUmdGlobalAccess": true,                     /* Allow accessing UMD globals from modules. */
-    // "resolveJsonModule": true,                        /* Enable importing .json files */
-    // "noResolve": true,                                /* Disallow `import`s, `require`s or `<reference>`s from expanding the number of files TypeScript should add to a project. */
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true, // jsonのimportを有効にできる
 
     /* JavaScript Support */
     "allowJs": true, // jsをtsにimportできる
 
     /* Emit */
-    // "importHelpers": true,                            /* Allow importing helper functions from tslib once per project, instead of including them per-file. */
-    // "importsNotUsedAsValues": "remove",               /* Specify emit/checking behavior for imports that are only used for types */
-    // "downlevelIteration": true,                       /* Emit more compliant, but verbose and less performant JavaScript for iteration. */
-    // "sourceRoot": "",                                 /* Specify the root path for debuggers to find the reference source code. */
     // "mapRoot": "",                                    /* Specify the location where debugger should locate map files instead of generated locations. */
     // "inlineSourceMap": true,                          /* Include sourcemap files inside the emitted JavaScript. */
     // "inlineSources": true,                            /* Include source code in the sourcemaps inside the emitted JavaScript. */
@@ -55,9 +43,6 @@
     "noUnusedParameters": true, // 関数内に未使用のパラメーターがあるとエラー
     "noUncheckedIndexedAccess": true, // 配列の要素やオブジェクトのプロパティへのアクセスを厳密に
     "allowUnreachableCode": false, // 到達不可能なコードがあるとエラー
-
-    /* Completeness */
-    // "skipLibCheck": true // d.tsの型チェックをskipする（コンパイル速度を取るか型安全を取るか）
   },
   "include": ["src/ts/**/*", "src/tsx/**/*"], // コンパイル対象のディレクトリ指定
 }
