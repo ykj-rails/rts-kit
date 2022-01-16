@@ -1,13 +1,13 @@
 {
   "compilerOptions": {
-    "target": "ESNext",
+    "target": "ES2021", // 変換後のコードのECMAScriptバージョンを指定する
     "jsx": "preserve", // jsxのコンパイルをtscではなくbabelなど他に任せたい場合に使用する
     // "jsxImportSource": "",
-    "module": "ESNext",
-    "moduleResolution": "node",
+    "module": "ESNext", // どのようにモジュールを読み込むか指定する。モジュールバンドラーに任せる場合はESNextがマスト。
+    "moduleResolution": "node", // モジュール解決を指定。nodeがマスト。
     "resolveJsonModule": true, // jsonのimportを有効にできる
     "allowJs": true, // jsをtsにimportできる
-    "esModuleInterop": true, // moduleの仕様をいい感じにしてくれる。allowSyntheticDefaultImportsもオンになる
+    "esModuleInterop": true, // CommonJSなモジュールをimportするときにinteropするオプション。allowSyntheticDefaultImportsもオンになる
     "forceConsistentCasingInFileNames": true, // importのファイル名の大文字小文字を判定する
     "strict": true, // 厳格な型チェックstrictファミリーを有効に
     "noImplicitAny": true, // 暗黙のany型をエラー
