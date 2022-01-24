@@ -13,14 +13,15 @@
 - Node.js のバージョン毎に推奨される target があるため、node.green を確認する
 - https://node.green/
 
-### tsconfig.json
+### babel
 
 - react
 - webpack
-- babel
-- eslint
 - prettier
 - jest
 - renovate
-- react-hook-form
-- yup
+
+### Memo
+
+- webpack ホットリロード効かない
+  - ts 効かない -> js で実験したが効かない
