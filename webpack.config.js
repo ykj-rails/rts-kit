@@ -9,7 +9,7 @@ module.exports = {
     'app-react': './src/tsx/app.tsx',
   },
   output: {
-    filename: '[name].js',
+    filename: 'js/[name].js',
     path: path.resolve(__dirname, 'public'),
   },
   devtool: mode === 'development' ? 'inline-source-map' : false,

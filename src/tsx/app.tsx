@@ -5,9 +5,10 @@ import json from '../data/data.json'
 const Hello = () => {
   return (
     <>
-      <h2>Hello React</h2>
+      <h1>Hello World</h1>
       <p>{json.name}</p>
       <p>{json.age}</p>
+      <img src="img/pien.png" />
     </>
   )
 }
