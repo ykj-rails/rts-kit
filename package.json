@@ -5,7 +5,8 @@
   "author": "yukiji",
   "scripts": {
     "dev": "webpack serve",
-    "build": "NODE_ENV=production webpack"
+    "build": "NODE_ENV=production webpack",
+    "imgmin": "node imagemin.mjs"
   },
   "devDependencies": {
     "@babel/core": "^7.16.5",
@@ -16,6 +17,9 @@
     "babel-loader": "^8.2.3",
     "core-js": "^3.20.1",
     "html-webpack-plugin": "^5.5.0",
+    "imagemin": "^8.0.1",
+    "imagemin-mozjpeg": "^10.0.0",
+    "imagemin-pngquant": "^9.0.2",
     "prettier": "2.5.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
