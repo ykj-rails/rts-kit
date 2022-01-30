@@ -9,8 +9,11 @@ module.exports = {
     'app-react': './src/tsx/app.tsx',
   },
   output: {
-    filename: 'js/[name].js',
     path: path.resolve(__dirname, 'public'),
+    filename: 'js/[name].js',
+    clean: {
+      keep: /img\//,
+    },
   },
   devtool: mode === 'development' ? 'inline-source-map' : false,
   devServer: {

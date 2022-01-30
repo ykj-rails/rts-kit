@@ -11,6 +11,12 @@ const writeFile = util.promisify(fs.writeFile)
 const srcDir = 'src/img'
 const distDir = 'public/img'
 
+// public/img配下をclean
+fs.rm(distDir, { recursive: true }, (error) => {
+  if (error) console.log(error)
+})
+
+// 画像圧縮
 imagemin([`${srcDir}/**/*.{jpg,jpeg,png,svg}`], {
   plugins: [
     imageminMozjpeg(),
