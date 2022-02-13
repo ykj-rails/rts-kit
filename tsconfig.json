@@ -15,7 +15,13 @@
     "noUnusedParameters": true, // 関数内に未使用のパラメーターがあるとエラー
     "noUncheckedIndexedAccess": true, // 配列の要素やオブジェクトのプロパティへのアクセスを厳密に
     "allowUnreachableCode": false, // 到達不可能なコードがあるとエラー
-    "skipLibCheck": true // d.tsの型チェックをスキップ
+    "skipLibCheck": true, // d.tsの型チェックをスキップ
+    "baseUrl": ".",
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ]
+    }
   },
   "include": ["src/ts/*", "src/tsx/*",], // コンパイル対象のディレクトリ指定
 }
