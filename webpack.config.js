@@ -1,12 +1,10 @@
 const path = require('path')
-const HtmlWebpackPlugin = require('html-webpack-plugin')
 const mode = process.env.NODE_ENV || 'development'
 
 module.exports = {
   mode: mode,
   entry: {
-    app: './src/ts/app.ts',
-    'app-react': './src/tsx/app.tsx',
+    app: './src/index.tsx',
   },
   output: {
     path: path.resolve(__dirname, 'public'),
@@ -35,10 +33,8 @@ module.exports = {
   },
   resolve: {
     extensions: ['.tsx', '.ts', '.js'],
+    alias: {
+      '@': path.resolve(__dirname, 'src'),
+    },
   },
-  plugins: [
-    new HtmlWebpackPlugin({
-      template: 'src/index.html',
-    }),
-  ],
 }
