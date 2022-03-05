@@ -22,7 +22,7 @@
     "core-js": "3.21.1",
     "eslint": "8.10.0",
     "eslint-config-prettier": "8.5.0",
-    "eslint-plugin-react": "7.29.2",
+    "eslint-plugin-react": "7.29.3",
     "html-webpack-plugin": "5.5.0",
     "imagemin": "8.0.1",
     "imagemin-mozjpeg": "10.0.0",
