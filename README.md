@@ -35,6 +35,7 @@
 - model や features ディレクトリ作成するか検討
   - 機能ごとに api や hooks を作成すること
 - Provider と Routes 作成
+- build ディレクトリ作成するように修正する
 
 ### TODO
 
