@@ -12,6 +12,56 @@
   "parserOptions": {
     "sourceType": "module"
   },
+  "plugins": [
+    "import"
+  ],
+  "rules": {
+    "import/order": [
+      "error",
+      {
+        "groups": [
+          "builtin",
+          "external",
+          "internal",
+          [
+            "parent",
+            "sibling"
+          ],
+          "object",
+          "type",
+          "index"
+        ],
+        "newlines-between": "always",
+        "pathGroupsExcludedImportTypes": [
+          "builtin"
+        ],
+        "alphabetize": {
+          "order": "asc",
+          "caseInsensitive": true
+        },
+        "pathGroups": [
+          // ここに書いた順序で間に1行空行をあけつつ整頓される
+          {
+            "pattern": "@/components/common",
+            "group": "internal",
+            "position": "before"
+          },
+          {
+            "pattern": "@/components/hooks",
+            "group": "internal",
+            "position": "before"
+          },
+          // styles
+          // 最後尾にしたいのでgroupをindex扱いにする
+          {
+            "pattern": "./**.module.css",
+            "group": "index",
+            "position": "before"
+          }
+        ]
+      }
+    ]
+  },
   "overrides": [
     {
       "files": [
@@ -40,8 +90,7 @@
         "react": {
           "version": "detect"
         }
-      },
-      "rules": {}
+      }
     }
   ]
 }
