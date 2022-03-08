@@ -12,7 +12,7 @@
 - Node.js のバージョン毎に推奨される target があるため、node.green を確認する
 - https://node.green/
 
-### 思想
+### アーキテクト
 
 - 新しくコンポーネントを作るときに迷わないこと
 - layout は毎回書く。
@@ -22,9 +22,6 @@
 ### Memo
 
 - webpack ホットリロード効かない
-- jest 入れたい
-- GitHub actions 入れたい
-- scaffolding -> Scaffdog 調べる
 - children は React.ReactNode
 - docs ディレクトリで内容ごとに README 作成してもよさそう
 - suspence と errorboundary でラップする
@@ -39,5 +36,6 @@
 
 ### TODO
 
-- eslint
-  - import / order
+- jest
+- GitHub actions
+- scaffolding -> Scaffdog 調べる
