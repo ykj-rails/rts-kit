@@ -41,7 +41,6 @@
           "caseInsensitive": true
         },
         "pathGroups": [
-          // ここに書いた順序で間に1行空行をあけつつ整頓される
           {
             "pattern": "@/components/common",
             "group": "internal",
@@ -50,13 +49,6 @@
           {
             "pattern": "@/components/hooks",
             "group": "internal",
-            "position": "before"
-          },
-          // styles
-          // 最後尾にしたいのでgroupをindex扱いにする
-          {
-            "pattern": "./**.module.css",
-            "group": "index",
             "position": "before"
           }
         ]
