@@ -1,7 +1,8 @@
 import React from 'react'
-import { Top } from './Top'
 
-import { Header, Footer } from '@/components/common'
+import { Footer, Header } from '@/components/common'
+
+import { Top } from './Top'
 
 export const TopPage = () => {
   return (
