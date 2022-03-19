@@ -41,6 +41,6 @@
     "webpack-dev-server": "4.7.4"
   },
   "volta": {
-    "node": "16.14.0"
+    "node": "16.14.2"
   }
 }
