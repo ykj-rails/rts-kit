@@ -1,9 +1,9 @@
 import React from 'react'
 
-import TopPage from './pages'
+import { AppRoutes } from './routes'
 
 const App = () => {
-  return <TopPage />
+  return <AppRoutes />
 }
 
 export default App
