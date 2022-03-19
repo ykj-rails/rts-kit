@@ -15,7 +15,7 @@
     "react-router-dom": "6.2.2"
   },
   "devDependencies": {
-    "@babel/core": "7.17.5",
+    "@babel/core": "7.17.8",
     "@babel/preset-env": "7.16.11",
     "@babel/preset-react": "7.16.7",
     "@types/react": "17.0.40",
