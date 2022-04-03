@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "webpack serve",
     "build": "NODE_ENV=production webpack",
+    "esbuild": "NODE_ENV=production node esbuild.js",
     "imgmin": "node tasks/imagemin.mjs",
     "lint:eslint": "eslint .",
     "fix:eslint": "npm run lint:eslint -- --fix"
@@ -24,6 +25,7 @@
     "@typescript-eslint/parser": "5.15.0",
     "babel-loader": "8.2.3",
     "core-js": "3.21.1",
+    "esbuild": "^0.14.27",
     "eslint": "8.11.0",
     "eslint-config-prettier": "8.5.0",
     "eslint-plugin-import": "2.25.4",
