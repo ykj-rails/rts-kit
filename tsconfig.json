@@ -11,7 +11,6 @@
     "forceConsistentCasingInFileNames": true, // importのファイル名の大文字小文字を判定する
     "strict": true, // 厳格な型チェックstrictファミリーを有効に
     "noImplicitAny": true, // 暗黙のany型をエラー
-    "noUnusedParameters": true, // 関数内に未使用のパラメーターがあるとエラー
     "noUncheckedIndexedAccess": true, // 配列の要素やオブジェクトのプロパティへのアクセスを厳密に
     "allowUnreachableCode": false, // 到達不可能なコードがあるとエラー
     "skipLibCheck": true, // d.tsの型チェックをスキップ
