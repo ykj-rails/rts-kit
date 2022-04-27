@@ -1,5 +1,7 @@
 const path = require('path')
+
 const mode = process.env.NODE_ENV || 'development'
+const ReactRefreshWebpackPlugin = require('@pmmmwh/react-refresh-webpack-plugin')
 
 module.exports = {
   mode: mode,
@@ -41,4 +43,7 @@ module.exports = {
   experiments: {
     topLevelAwait: true,
   },
+  plugins: [mode === 'development' && new ReactRefreshWebpackPlugin()].filter(
+    Boolean
+  ),
 }
