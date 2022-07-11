@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "target": "ES2021", // 変換後のコードのECMAScriptバージョンを指定する
+    "target": "ESNext", // コンパイルはbabelに任せるのでESNextを設定
     "jsx": "preserve", // jsxのコンパイルをtscではなくbabelなど他に任せたい場合に使用する
     // "jsxImportSource": "",
     "module": "ESNext", // どのようにモジュールを読み込むか指定する。モジュールバンドラーに任せる場合はESNextがマスト。
